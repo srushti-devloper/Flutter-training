@@ -12,9 +12,9 @@ class swap{
     print("Enter value of B");
     b = double.parse(stdin.readLineSync()!);
 
-        c = a;
-        a=b;
-        b=c;
+        a = a+b;
+        b= a-b;
+        a = a-b;
         print("After a swap value of A is :$a \n value of b is :$b");
     }
 
